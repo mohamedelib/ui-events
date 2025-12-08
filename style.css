@@ -84,3 +84,11 @@ a[href="#design"] {
 
 
 /* Hieronder komen jouw animaties en stijlen */
+
+a[href="#frontend"]{
+
+}
+
+.scale{
+transform: scale(2);
+}
