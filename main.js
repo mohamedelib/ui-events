@@ -101,3 +101,21 @@ theButton.addEventListener('mouseout', rotatie)
 function rotatie (){
 theButton.classList.toggle('rotate')
 }
+
+
+// #8
+// Button moet een mousedown en mouse up propertie hebben flip en terug
+// Stap 1: querySelector
+let flowBtn = document.querySelector('a[href="#flow"]');
+// Stap 2: addEventListener
+flowBtn.addEventListener('mouseup', rotatie)
+flowBtn.addEventListener('mousedown', rotatie2)
+
+function rotatie (){
+flowBtn.classList.add('rotate');
+flowBtn.classList.remove('rotate2');
+}
+function rotatie2() {
+  flowBtn.classList.remove('rotate');
+  flowBtn.classList.add('rotate2');
+}

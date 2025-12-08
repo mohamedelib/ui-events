@@ -132,5 +132,10 @@ a[href="#the"]{
 }
 .rotate {
 transform: rotate(180deg);
+transition-duration: 3s
+}
+
+.rotate2{
+  transform: rotate(-180deg);
 transition-duration: 3s;
 }
