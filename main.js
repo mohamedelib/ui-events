@@ -143,3 +143,12 @@ interfaceBtn.addEventListener('keyup', function() {
 });
 
 
+let eventsLink = document.querySelector('a[href="#events"]');
+
+eventsLink.addEventListener('wheel', function(event) {
+  event.preventDefault();
+  let currentSize = parseFloat(getComputedStyle(eventsLink).fontSize);
+
+
+  eventsLink.style.fontSize = (currentSize + (event.deltaY > 0 ? -1 : 1)) + "px";
+});
