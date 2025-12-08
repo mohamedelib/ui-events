@@ -34,3 +34,18 @@ frontEndLink.addEventListener('click', scale)
 
 // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
 // scaleLink.classList.toggle...
+function scale(){
+frontEndLink.classList.toggle('scale')
+}
+
+
+// Button moet een translate animatie krijgen
+// Stap 1: querySelector
+// let scaleLink = document.querySelector...
+let enButton = document.querySelector('a[href="#and"]')
+// Stap 2: addEventListener
+enButton.addEventListener('click', animatie)
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+function animatie(){
+enButton.classList.toggle('animatie')
+}

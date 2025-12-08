@@ -92,3 +92,10 @@ a[href="#frontend"]{
 .scale{
 transform: scale(2);
 }
+
+a[href="#and"]{
+
+}
+.animatie{
+transform: translate(42px, 18px);
+}
