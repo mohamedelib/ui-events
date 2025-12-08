@@ -50,7 +50,7 @@ function animatie(){
 enButton.classList.toggle('animatie')
 }
 
-// Button moet een translate animatie krijgen
+// Button moet een schud animatie krijgen
 // Stap 1: querySelector
 let devButton = document.querySelector('a[href="#development"]')
 // let scaleLink = document.querySelector...
@@ -61,7 +61,7 @@ function schudden(){
 devButton.classList.toggle('shake')
 }
 
-// Button moet een translate animatie krijgen
+// Button moet een focus animatie krijgen
 // Stap 1: querySelector
 let sprintButton = document.querySelector('a[href="#sprint-5"]')
 // let scaleLink = document.querySelector...
@@ -71,7 +71,7 @@ sprintButton.addEventListener('focus', focusev)
 function focusev(){
   sprintButton.classList.toggle('focusev')
 }
-// Button moet een translate animatie krijgen
+// Button moet een hover animatie krijgen
 // Stap 1: querySelector
 let fixBtn = document.querySelector('a[href="#fix"]');
 
@@ -151,4 +151,20 @@ eventsLink.addEventListener('wheel', function(event) {
 
 
   eventsLink.style.fontSize = (currentSize + (event.deltaY > 0 ? -1 : 1)) + "px";
+});
+
+
+
+// Button moet een radial gradient hebben die de muis volgt.
+// Stap 1: querySelector
+let interactionBtn = document.querySelector('a[href="#interaction"]');
+
+// Eventlistener
+interactionBtn.addEventListener('mousemove', function(event) {
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+
+  interactionBtn.style.setProperty(
+    'background',
+    `radial-gradient(circle at ${event.offsetX}px ${event.offsetY}px, white, black)`
+  );
 });
