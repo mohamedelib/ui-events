@@ -71,4 +71,20 @@ sprintButton.addEventListener('focus', focusev)
 function focusev(){
   sprintButton.classList.toggle('focusev')
 }
+// Button moet een translate animatie krijgen
+// Stap 1: querySelector
+let fixBtn = document.querySelector('a[href="#fix"]');
 
+// let scaleLink = document.querySelector...
+// Stap 2: addEventListener
+fixBtn.addEventListener('mouseover', texthover)
+fixBtn.addEventListener('mouseleave', textLeave)
+
+
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+function texthover(){
+fixBtn.textContent = 'hallo';
+}
+function textLeave() {
+fixBtn.textContent = 'Fix';
+}
