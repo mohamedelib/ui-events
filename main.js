@@ -110,6 +110,7 @@ let flowBtn = document.querySelector('a[href="#flow"]');
 // Stap 2: addEventListener
 flowBtn.addEventListener('mouseup', rotatie)
 flowBtn.addEventListener('mousedown', rotatie2)
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
 
 function rotatie (){
 flowBtn.classList.add('rotate');
@@ -119,3 +120,15 @@ function rotatie2() {
   flowBtn.classList.remove('rotate');
   flowBtn.classList.add('rotate2');
 }
+
+// Button moet rood worden als je de R toets indrukt
+// Stap 1: querySelector
+let userButton = document.querySelector('a[href="#user"]');
+// Stap 2: addEventListener
+userButton.addEventListener('keyup', function(event) {
+  if (event.key === 'r') {
+    userButton.style.backgroundColor = 'red';
+  }
+});
+
+
