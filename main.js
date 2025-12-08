@@ -88,3 +88,16 @@ fixBtn.textContent = 'hallo';
 function textLeave() {
 fixBtn.textContent = 'Fix';
 }
+
+// #6
+// Button moet een mouseout propertie hebben en roteren
+// Stap 1: querySelector
+let theButton = document.querySelector('a[href="#the"]');
+// let scaleLink = document.querySelector...
+// Stap 2: addEventListener
+theButton.addEventListener('mouseout', rotatie)
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+
+function rotatie (){
+theButton.classList.toggle('rotate')
+}
