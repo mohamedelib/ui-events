@@ -49,3 +49,14 @@ enButton.addEventListener('click', animatie)
 function animatie(){
 enButton.classList.toggle('animatie')
 }
+
+// Button moet een translate animatie krijgen
+// Stap 1: querySelector
+let devButton = document.querySelector('a[href="#development"]')
+// let scaleLink = document.querySelector...
+// Stap 2: addEventListener
+devButton.addEventListener('click', schudden)
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+function schudden(){
+devButton.classList.toggle('shake')
+}
