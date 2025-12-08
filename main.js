@@ -60,3 +60,15 @@ devButton.addEventListener('click', schudden)
 function schudden(){
 devButton.classList.toggle('shake')
 }
+
+// Button moet een translate animatie krijgen
+// Stap 1: querySelector
+let sprintButton = document.querySelector('a[href="#sprint-5"]')
+// let scaleLink = document.querySelector...
+// Stap 2: addEventListener
+sprintButton.addEventListener('focus', focusev)
+// Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
+function focusev(){
+  sprintButton.classList.toggle('focusev')
+}
+
