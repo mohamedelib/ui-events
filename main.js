@@ -130,5 +130,16 @@ userButton.addEventListener('keyup', function(event) {
     userButton.style.backgroundColor = 'red';
   }
 });
+// Button moet opblazen als ballon
+// Stap 1: querySelector
+let interfaceBtn = document.querySelector('a[href="#interface"]');
+// Stap 2: addEventListener
+interfaceBtn.addEventListener('keydown', function() {
+  interfaceBtn.classList.add('balloon');
+});
+
+interfaceBtn.addEventListener('keyup', function() {
+  interfaceBtn.classList.remove('balloon');
+});
 
 

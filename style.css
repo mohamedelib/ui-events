@@ -146,3 +146,11 @@ a[href="#user"]{
 background: black;
 color: orangered;
 }
+
+a[href="#user"]{
+ transition: transform 5s;
+}
+.balloon {
+  transform: scale(1.4);
+  transition-duration: 5s;
+}
