@@ -55,7 +55,7 @@ enButton.classList.toggle('animatie')
 let devButton = document.querySelector('a[href="#development"]')
 // let scaleLink = document.querySelector...
 // Stap 2: addEventListener
-devButton.addEventListener('click', schudden)
+devButton.addEventListener('dblclick', schudden)
 // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
 function schudden(){
 devButton.classList.toggle('shake')
